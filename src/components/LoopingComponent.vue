@@ -25,7 +25,6 @@ export default{
 </script>
 
 <template>
-
 <ul>
     <!-- Menampilkan data yang telah didefinisikan di atas
     index adalah hasil urutan data, array yang dimilau dari nol-->
@@ -33,8 +32,6 @@ export default{
        {{index}} - {{k.aktifitas}}
     </li>
 </ul>
-
-
 
 </template>
 

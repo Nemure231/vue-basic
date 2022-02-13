@@ -37,6 +37,8 @@ true dan dappat ditampilkan -->
 </button>
 <br>
 <br>
+
+
 <!-- Sama saja tapi pakai methods -->
 <button @click="tampil">
     Tampil

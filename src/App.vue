@@ -9,6 +9,8 @@ import Method from './components/Method.vue'
 import Model from './components/Model.vue'
 import Conditional from './components/Conditional.vue'
 import Looping from './components/Looping.vue'
+import Lifecycle from './components/Lifecycle.vue'
+
 </script>
 
 <template>
@@ -20,7 +22,7 @@ import Looping from './components/Looping.vue'
     dan mengisi datannya dengan menggunakan
     kelas message. Message ini adalah nama data yang telah 
     didefinisikan Sebelumnya-->
-  <Props pesan="Helloooo" angka="11"/>
+  <Props :pesan="'Helloooo'" :angka="11" :teks="'MMMM'"/>
   <hr>
    <h2>Contoh Method @Click</h2>
   <Method/>
@@ -33,8 +35,14 @@ import Looping from './components/Looping.vue'
   <hr>
   <h2>Contoh Looping</h2>
   <Looping/>
+  <hr>
+ 
+  <h2>Contoh Lifecycle</h2>
+  <Lifecycle/>
 
 </template>
+
+
 
 
 

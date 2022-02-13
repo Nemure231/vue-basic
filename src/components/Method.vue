@@ -20,16 +20,17 @@ export default{
 
 <template>
 
-
 <div>{{count}}</div>
 <button @click="count++">
     Tekan
 </button>
+
+<br>
+<br>
 <!-- Sekarang pakai method -->
 <button @click="tekan">
 Tekan Pakai Method tambah 2
 </button>
-
  
 </template>
 
