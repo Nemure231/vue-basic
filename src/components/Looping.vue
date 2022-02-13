@@ -27,6 +27,8 @@ export default{
 <template>
 
 <ul>
+    <!-- Menampilkan data yang telah didefinisikan di atas
+    index adalah hasil urutan data, array yang dimilau dari nol-->
     <li v-for="(k, index) in kegiatan" :key="k.id">
        {{index}} - {{k.aktifitas}}
     </li>
