@@ -1,7 +1,15 @@
-import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+const { defineConfig } = require('vite')
+const { resolve } = require('path')
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue()]
-})
+  plugins: [vue()],
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        crud: resolve(__dirname, 'crud/index.html')
+      }
+    }
+  }
+});

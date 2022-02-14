@@ -1,15 +1,15 @@
 import {createRouter, createWebHistory}  from 'vue-router'
 
-import DecRender from '../components/DeclarativeRendering.vue'
-import Props from '../components/Props.vue'
-import Method from '../components/Method.vue'
-import Model from '../components/Model.vue'
-import Conditional from '../components/Conditional.vue'
-import Looping from '../components/Looping.vue'
-import Lifecycle from '../components/Lifecycle.vue'
-import Computed from '../components/Computed.vue'
-import Watcher from '../components/Watcher.vue'
-import DynamicClass from '../components/DynamicClass.vue'
+import DecRender from '/src/components/basic/DeclarativeRendering.vue'
+import Props from '/src/components/basic/Props.vue'
+import Method from '/src/components/basic/Method.vue'
+import Model from '/src/components/basic/Model.vue'
+import Conditional from '/src/components/basic/Conditional.vue'
+import Looping from '/src/components/basic/Looping.vue'
+import Lifecycle from '/src/components/basic/Lifecycle.vue'
+import Computed from '/src/components/basic/Computed.vue'
+import Watcher from '/src/components/basic/Watcher.vue'
+import DynamicClass from '/src/components/basic/DynamicClass.vue'
 
 
 const routes = [
@@ -62,7 +62,7 @@ const routes = [
         path: '/dynamic-class',
         name: 'Dynamic Class', 
         component: DynamicClass
-    },
+    }
 ];
 
 
