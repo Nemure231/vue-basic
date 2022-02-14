@@ -1,51 +1,34 @@
 <script setup>
 
-// Memaanggil komponen vue dari folder coponens, dan mendefinisikannya
-// Sehingga dapat dipakai di dengan tab html yang namanya
-// <DecRender>
-import DecRender from './components/DeclarativeRendering.vue'
-import Props from './components/Props.vue'
-import Method from './components/Method.vue'
-import Model from './components/Model.vue'
-import Conditional from './components/Conditional.vue'
-import Looping from './components/Looping.vue'
-import Lifecycle from './components/Lifecycle.vue'
-
 </script>
-
 <template>
-  <h2>Contoh Declarative Rendering</h2>
-  <DecRender/>
-  <hr>
-   <h2>Props</h2>
-    <!-- Mendampilkan data yang ada di komponen Props, 
-    dan mengisi datannya dengan menggunakan
-    kelas message. Message ini adalah nama data yang telah 
-    didefinisikan Sebelumnya-->
-  <Props :pesan="'Helloooo'" :angka="11" :teks="'MMMM'"/>
-  <hr>
-   <h2>Contoh Method @Click</h2>
-  <Method/>
-  <hr>
-  <h2>Contoh Model</h2>
-  <Model/>
-  <hr>
-  <h2>Contoh Conditional</h2>
-  <Conditional/>
-  <hr>
-  <h2>Contoh Looping</h2>
-  <Looping/>
-  <hr>
- 
-  <h2>Contoh Lifecycle</h2>
-  <Lifecycle/>
+
+
+<div>Web Belajar Vue Saya</div>
+<br><br>
+
+<div class="wrap-link">
+    <router-link to="/dec-render">Decrender</router-link> |
+    <router-link to="/props">Props</router-link>
+
+    <router-link to="/method">Method</router-link> |
+    <router-link to="/model">Model</router-link>
+    <router-link to="/conditional">Conditional</router-link> |
+    <router-link to="/looping">Looping</router-link>
+    <router-link to="/lifecycle">Lifecycle</router-link> |
+    <router-link to="/computed">Computed</router-link>
+    <router-link to="/watcher">Watcher</router-link> |
+    <router-link to="/dynamic-class">Dynamic Class</router-link>
+</div>
+
+<br><br><hr>
+
+<router-view>
+  
+</router-view>
+
 
 </template>
-
-
-
-
-
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -54,5 +37,24 @@ import Lifecycle from './components/Lifecycle.vue'
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.wrap-link{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.wrap-link > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(2rem * var(--tw-space-x-reverse));
+  margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.wrap-link > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-top: calc(1rem * var(--tw-space-x-reverse));
+  margin-bottom: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 </style>

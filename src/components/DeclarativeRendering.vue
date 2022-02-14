@@ -21,6 +21,7 @@ tag script di atas tag template -->
 
 </div>
 <br>
+
 <!-- Contoh merender dengan menggunakan kelas value tambah : 
 (titik dua) di depan, nanti data dalam export default masuk
  ke dalam value mirip dengan alpine -->
@@ -31,7 +32,8 @@ tag script di atas tag template -->
 <div v-html="html">
 </div>
 
-<br><br>
+
+<br>
 
 <div v-show="tampil">
     tampil
@@ -49,6 +51,8 @@ Tampil pakai v-show + method
 </template>
 
 <style scoped>
+
+
 
 
 </style>

@@ -23,25 +23,26 @@ export default{
 <div v-if="status">DITAMPILKAN</div>
 <div v-else>DISEMBUNYIKAN</div>
 
+
 <!-- Menampilkan data di atas yang defaultnya false, ke
 true dan dappat ditampilkan -->
 <button @click="status = true">
-    Tampil
+    Tampil sekali
 </button>
 <br>
 <br>
 
 <!-- Sama saja, tapi bisa tampil dan sembunyikan -->
 <button @click="status =! status">
-    Tampil
+    Tampil berkali-kali
 </button>
 <br>
 <br>
 
 
 <!-- Sama saja tapi pakai methods -->
-<button @click="tampil">
-    Tampil
+<button  @click="tampil">
+    Tampil berkali-kali pake method
 </button>
 
 </template>
