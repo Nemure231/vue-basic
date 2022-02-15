@@ -66,7 +66,7 @@ const routes = [
     },
     { 
         path: '/refs',
-        name: 'Refs', 
+        name: 'refs', 
         component: Refs
     }
 ];

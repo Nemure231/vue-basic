@@ -5,17 +5,27 @@ export default{
     emits: ['child-klik'],
     methods: {
         onTekan(){
-            this.$emit('child-klik');
-        }
+            this.$emit('child-klik', 'ini value');
+        },
+        // onKlik(){
+        //     alert('ini event dari parents');
+
+        // }
     }
 }
 </script>
 
 <template>
 
-<!-- Menset eventnya eit di child  -->
+<!-- Menset eventnya emit di child  -->
+<div>Mengirim event child menggunakan emit</div>
 <button @click="onTekan">Tekan</button>
+<br><br>
 
+<!-- Menset eventnya refs di child  -->
+<!-- <div>Mengirim event child menggunakan refs</div>
+<button @click="">Tekan</button>
+<br> -->
 </template>
 
 
