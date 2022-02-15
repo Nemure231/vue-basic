@@ -12,62 +12,85 @@ import Watcher from '/src/components/basic/Watcher.vue'
 import DynamicClass from '/src/components/basic/DynamicClass.vue'
 import Refs from '/src/components/basic/Refs.vue'
 
+import Nav from '/src/components/Nav.vue'
 
 const routes = [
     { 
         path: '/dec-render',
-        name: 'DecRender',
-        component: DecRender
+        components: {
+            DecRender,
+            Nav
+        }
     },
     { 
         path: '/props',
-        name: 'Props', 
-        component: Props
+        components: {
+            Props,
+            Nav
+        }
     },
     { 
         path: '/method',
-        name: 'Method',
-        component: Method
+        components: {
+            Method,
+            Nav
+        }
     },
     { 
         path: '/model',
-        name: 'Model', 
-        component: Model
+        components: {
+            Model,
+            Nav
+        }
     },
     { 
         path: '/conditional',
-        name: 'Conditional',
-        component: Conditional
+        components: {
+            Conditional,
+            Nav
+        }
     },
     { 
         path: '/looping',
-        name: 'Looping', 
-        component: Looping
+        components: {
+            Looping,
+            Nav
+        }
     },
     { 
         path: '/lifecycle',
-        name: 'Lifecycle', 
-        component: Lifecycle
+        components: {
+            Lifecycle,
+            Nav
+        }
     },
     { 
         path: '/computed',
-        name: 'Computed', 
-        component: Computed
+        components: {
+            Computed,
+            Nav
+        }
     },
     { 
         path: '/watcher',
-        name: 'Watcher', 
-        component: Watcher
+        components: {
+            Watcher,
+            Nav
+        }
     },
     { 
         path: '/dynamic-class',
-        name: 'Dynamic Class', 
-        component: DynamicClass
+        components: {
+            DynamicClass,
+            Nav
+        }
     },
     { 
         path: '/refs',
-        name: 'refs', 
-        component: Refs
+        components: {
+            Refs,
+            Nav
+        }
     }
 ];
 
