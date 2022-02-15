@@ -10,6 +10,7 @@ import Lifecycle from '/src/components/basic/Lifecycle.vue'
 import Computed from '/src/components/basic/Computed.vue'
 import Watcher from '/src/components/basic/Watcher.vue'
 import DynamicClass from '/src/components/basic/DynamicClass.vue'
+import Refs from '/src/components/basic/Refs.vue'
 
 
 const routes = [
@@ -62,6 +63,11 @@ const routes = [
         path: '/dynamic-class',
         name: 'Dynamic Class', 
         component: DynamicClass
+    },
+    { 
+        path: '/refs',
+        name: 'Refs', 
+        component: Refs
     }
 ];
 

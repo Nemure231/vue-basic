@@ -1,13 +1,23 @@
-<script setup>
+<script>
+
+export default{
+    // Menjalankan method emit dari komponen Refs.vue
+    methods: {
+        onTekan(){
+          alert('event dari child, menggunakan emits');
+        }
+    }
+}
 
 </script>
+
 <template>
+  <!-- <refs @child-klik="onTekan"></refs> -->
 
-
-<h1 class="title">Web Belajar Vue Saya</h1>
-<br><br>
-
-<div class="wrap-link">
+  <h1 class="title">Web Belajar Vue Saya</h1>
+  <br><br>
+  
+  <div class="wrap-link">
     <router-link to="/dec-render">Decrender</router-link>
     <router-link to="/props">Props</router-link>
     <router-link to="/method">Method</router-link>
@@ -18,15 +28,15 @@
     <router-link to="/computed">Computed</router-link>
     <router-link to="/watcher">Watcher</router-link>
     <router-link to="/dynamic-class">Dynamic Class</router-link>
-</div>
+    <router-link to="/refs">Refs/Emit</router-link>
+  </div>
 
-<br><br><hr>
+  <br /><br />
+  <hr />
 
-<router-view>
-  
-</router-view>
-
-
+  <router-view @child-klik="onTekan">
+    
+  </router-view>
 </template>
 <style>
 #app {
@@ -38,20 +48,20 @@
   margin-top: 60px;
 }
 
-.wrap-link{
+.wrap-link {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
 }
 
-a{
+a {
   text-decoration-line: none;
   font-weight: 600;
-  color:cornflowerblue;
+  color: cornflowerblue;
 }
 
-.title{
+.title {
   color: rgb(82, 0, 123);
 }
 
