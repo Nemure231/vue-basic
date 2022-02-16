@@ -15,7 +15,8 @@
     <router-link to="/computed">Computed</router-link>
     <router-link to="/watcher">Watcher</router-link>
     <router-link to="/dynamic-class">Dynamic Class</router-link>
-    <router-link to="/refs">Refs/Emit</router-link>
+    <router-link to="/refs-emits">Refs/Emit</router-link>
+    <router-link to="/slot">Slot</router-link>
   </div>
 </template>
 
