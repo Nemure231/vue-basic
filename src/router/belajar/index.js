@@ -15,6 +15,8 @@ import Slot from '/src/components/basic/Slot.vue'
 import GlobalComponent from '/src/components/basic/GlobalComponent.vue'
 import ProvideInject from '/src/components/basic/ProvideInject.vue'
 import KeepAlive from '/src/components/basic/KeepAlive.vue'
+import Mixins from '/src/components/basic/Mixins.vue'
+import Teleport from '/src/components/basic/Teleport.vue'
 
 import Home from '/src/components/Home.vue'
 import Nav from '/src/components/Nav.vue'
@@ -125,6 +127,18 @@ const routes = [
                 path: "keep-alive", 
                 components:{
                     KeepAlive
+                } 
+            },
+            { 
+                path: "mixins", 
+                components:{
+                    Mixins
+                } 
+            },
+            { 
+                path: "teleport", 
+                components:{
+                    Teleport
                 } 
             },
         ]

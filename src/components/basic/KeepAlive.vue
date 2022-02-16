@@ -30,14 +30,16 @@ export default{
 
 </div>
 
-<!-- Keep alive adalah sebuah fungsi yang mmembuat data menjadi statis, artinya
-setiap kita menekan tab yang terdapat request api, web akan meload ulang data api tersebut sehingga dapat tampil
-tapi dengan keep-alive dia hanya akan meload satu kali dan pada percobaan ke-2 akan dijadikan data statis 
+<!-- Keep alive adalah sebuah fungsi yang membuat data menjadi statis, 
+artinya setiap kita menekan tab yang terdapat request api, 
+web akan meload ulang data api tersebut sehingga dapat tampil
+tapi dengan keep-alive dia hanya akan meload satu kali dan pada 
+percobaan ke-2 akan dijadikan data statis 
 (tidak akan melakukan request lagi) -->
 <keep-alive>
-    <!-- Menampilkan komponen berdasarkan tabs yang berbeda -->
     <component :is="currentTabComponent" />
 </keep-alive>
+ <!-- Tag componens menampilkan komponen berdasarkan tabs yang berbeda -->
 </template>
 
 

@@ -18,8 +18,10 @@
     <router-link to="/refs-emits">Refs/Emit</router-link>
     <router-link to="/slot">Slot</router-link>
     <router-link to="/global-component">Global Component</router-link>
-     <router-link to="/provide-inject">Provide Inject</router-link>
-      <router-link to="/keep-alive">Keep Alive</router-link>
+    <router-link to="/provide-inject">Provide Inject</router-link>
+    <router-link to="/keep-alive">Keep Alive</router-link>
+    <router-link to="/mixins">Mixins</router-link>
+    <router-link to="/teleport">Teleport</router-link>
   </div>
 </template>
 

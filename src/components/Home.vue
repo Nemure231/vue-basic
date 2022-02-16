@@ -31,5 +31,11 @@ export default{
 <router-view name="GlobalComponent"></router-view>
 <router-view name="ProvideInject"></router-view>
 <router-view name="KeepAlive"></router-view>
+<router-view name="Mixins"></router-view>
+
+<!-- Menteleport view route -->
+<teleport to='#vue-tele'>
+<router-view name="Teleport"></router-view>
+</teleport>
 </template>
 
