@@ -16,7 +16,8 @@ export default{
 
 
 <router-view name="DecRender"></router-view>
-<router-view name="Props"></router-view>
+<!-- Menset data untuk props -->
+<router-view :pesan="'hello'" :angka="10" name="Props"></router-view>
 <router-view name="Method"></router-view>
 <router-view name="Model"></router-view>
 <router-view name="Conditional"></router-view>
@@ -25,13 +26,9 @@ export default{
 <router-view name="Computed"></router-view>
 <router-view name="Watcher"></router-view>
 <router-view name="DynamicClass"></router-view>
-<router-view name="Refs" @child-klik="onTekan">
-
-</router-view>
-
-<router-view name="Slot">
-
-</router-view>
+<router-view name="Emits" @child-klik="onTekan"></router-view>
+<router-view name="Slot"></router-view>
+<router-view name="GlobalComponent"></router-view>
 
 </template>
 

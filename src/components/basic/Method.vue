@@ -20,6 +20,7 @@ export default{
 
 <template>
 
+
 <div>{{count}}</div>
 <button @click="count++">
     Tekan

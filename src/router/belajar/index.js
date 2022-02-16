@@ -12,7 +12,7 @@ import Watcher from '/src/components/basic/Watcher.vue'
 import DynamicClass from '/src/components/basic/DynamicClass.vue'
 import Emits from '/src/components/basic/Emits.vue'
 import Slot from '/src/components/basic/Slot.vue'
-
+import GlobalComponent from '/src/components/basic/GlobalComponent.vue'
 
 
 import Home from '/src/components/Home.vue'
@@ -106,6 +106,12 @@ const routes = [
                 components:{
                     Slot
 
+                } 
+            },
+            { 
+                path: "global-component", 
+                components:{
+                    GlobalComponent
                 } 
             },
         ]

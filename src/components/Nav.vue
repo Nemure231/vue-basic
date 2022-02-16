@@ -17,6 +17,7 @@
     <router-link to="/dynamic-class">Dynamic Class</router-link>
     <router-link to="/refs-emits">Refs/Emit</router-link>
     <router-link to="/slot">Slot</router-link>
+    <router-link to="/global-component">Global Component</router-link>
   </div>
 </template>
 
