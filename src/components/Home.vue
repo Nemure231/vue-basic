@@ -14,9 +14,6 @@ export default{
 
 <template>
 
-<!-- <router-view  @child-klik="onTekan">
-
-</router-view> -->
 
 <router-view name="DecRender"></router-view>
 <router-view name="Props"></router-view>
@@ -29,6 +26,10 @@ export default{
 <router-view name="Watcher"></router-view>
 <router-view name="DynamicClass"></router-view>
 <router-view name="Refs" @child-klik="onTekan">
+
+</router-view>
+
+<router-view name="Slot">
 
 </router-view>
 
