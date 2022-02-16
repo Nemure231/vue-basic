@@ -13,7 +13,8 @@ import DynamicClass from '/src/components/basic/DynamicClass.vue'
 import Emits from '/src/components/basic/Emits.vue'
 import Slot from '/src/components/basic/Slot.vue'
 import GlobalComponent from '/src/components/basic/GlobalComponent.vue'
-
+import ProvideInject from '/src/components/basic/ProvideInject.vue'
+import KeepAlive from '/src/components/basic/KeepAlive.vue'
 
 import Home from '/src/components/Home.vue'
 import Nav from '/src/components/Nav.vue'
@@ -112,6 +113,18 @@ const routes = [
                 path: "global-component", 
                 components:{
                     GlobalComponent
+                } 
+            },
+            { 
+                path: "provide-inject", 
+                components:{
+                    ProvideInject
+                } 
+            },
+            { 
+                path: "keep-alive", 
+                components:{
+                    KeepAlive
                 } 
             },
         ]

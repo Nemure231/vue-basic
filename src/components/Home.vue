@@ -29,6 +29,7 @@ export default{
 <router-view name="Emits" @child-klik="onTekan"></router-view>
 <router-view name="Slot"></router-view>
 <router-view name="GlobalComponent"></router-view>
-
+<router-view name="ProvideInject"></router-view>
+<router-view name="KeepAlive"></router-view>
 </template>
 
